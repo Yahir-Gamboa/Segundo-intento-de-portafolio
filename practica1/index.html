@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Proyecto Final, CANBOT| Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Introduccion a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">CanBot Compacto</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/Yo.jpg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Ángel Yahir Gamboa Avendaño</div>
+                                <div class="text-muted">Ingeniería Biomédica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: 29/11/2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/Canbot cable.jfif" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">Este proyecto consiste en un robot con forma cilíndrica denominado Canbot, propulsado por dos servomotores truncados que permiten un giro completo de las ruedas. El movimiento del robot está sincronizado con una pantalla que muestra una "carita" que cambia en función de la dirección y el movimiento del Canbot.
+
+                            Tecnologías utilizadas:
+                            
+                            Microcontrolador ATtiny85: La unidad central de control del proyecto, programada utilizando Arduino IDE y el método Arduino as ISP para la programación del microcontrolador.
+                            Servomotores: Se emplearon dos servos modificados para permitir un giro completo, proporcionando movimiento dinámico y preciso al robot.
+                            Pantalla: Una pantalla LCD que visualiza diferentes expresiones faciales que cambian de acuerdo con el comportamiento del robot.
+                            Hc-05: Se incluye un módulo bluetooth para configurar la comunicación del robot a una interfaz manejada desde el celular
+                            Este proyecto integra componentes electrónicos y programación para crear una interacción dinámica y visualmente atractiva, combinando movilidad y expresión facial en un solo sistema autónomo.</p>
+                        
+                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">El Canbot es un robot móvil controlado de manera inalámbrica mediante Bluetooth, utilizando el módulo HC-05 para interactuar con una interfaz en un teléfono celular. El robot está impulsado por dos servomotores truncados que permiten un giro completo de las ruedas, proporcionando movimientos precisos y dinámicos. Además, cuenta con una pantalla LCD que muestra expresiones faciales que cambian en función de la dirección y el movimiento del robot, ofreciendo una experiencia visual interactiva.</p>
+                        <p class="fs-6 mb-4">El control del robot se realiza a través de una aplicación móvil que se conecta al HC-05, el cual envía las señales al microcontrolador ATtiny85. Este sistema permite al usuario controlar el movimiento del Canbot de forma intuitiva y en tiempo real, mientras que la pantalla refleja el estado emocional del robot según su comportamiento.</p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">La base del robot está hecha con filamento plástico impreso en 3D. Se utilizó el software Altium Designer para diseñar y cortar una PCB en la maquina Roland a base de cobre. Se usó un microcontrolador ATtiny85y fue programado con un Arduino.</p>
+                        <p class="fs-6 mb-4">El resto de los materiales se enlistan cómo HC-05 (Bluetooth), 2 servomotores, Pantalla oled, Jumpers macho-macho, silicón, 2pilas AA, estaño y plastico para aislar cables sensible a la temperatura</p>
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">Se utilizó el código añadido en descargables a través de un microcontrolador ATtiny85 programado por un Arduino como isp. Se armó y probó un circuito en protoboard con el que se comprobó que dicho código era funcional y se pasó a copiar el sistema en Altium Designer
+                            }</p>
+                        <p class="fs-6 mb-4">Después de dibujar el coche usando el software CATIAV5 para dibujar, se imprimió en 3D usando filamento plastico. Luego se Creó la PCB usando el esquematico hecho con Altium Designer en una mauqina Roland.
+                            Teniendo la PCB cortada y el cuerpo impreso, solo fue cuestion de ensamblar los componentes. La electrónica fue soldada a la PCB y lo demás fue fijado con silicón.
+                        </p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/C.jfif" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/imagen.png" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/imagen 2.png" alt="..." /></figure>
+
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">Desafortunadamente, el espacio era demasiado reducido para poderjuntarlo todo por lo que en el segundo intento se terminó forzando el equipo y no había espacio para labateria</p>
+                        <p class="fs-6 mb-4">Se muestran los archivos que se tienen para el ensamble</p>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">Este proyecto demostró un enfoque sólido en la integración de diversas tecnologías para crear un robot controlado por Bluetooth. Utilicé dos servos truncados para permitir giros completos, un ATtiny85 como microcontrolador y una pantalla OLED para mostrar las expresiones del robot en función de sus movimientos. La comunicación se estableció mediante un módulo Bluetooth HC-05 y una interfaz móvil desarrollada para controlar el robot a través de un teléfono celular.
+                            A pesar de que la implementación técnica fue exitosa y el sistema funcionaba correctamente en términos de control y visualización, el principal obstáculo fue la limitación de espacio para ensamblar todos los componentes. El espacio extremadamente reducido impidió una integración efectiva y robusta de los distintos elementos, lo que resultó en la imposibilidad de ensamblar el robot de forma compacta y funcional. Como consecuencia, aunque las piezas individuales estaban operativas, el proyecto no logró transformarse en un robot completamente funcional. Este desafío subraya la importancia del diseño físico en la construcción de proyectos como este. En futuras iteraciones, aumentar el espacio disponible para el ensamblaje permitirá una mejor organización de los componentes, lo que podría facilitar una integración más estable y eficiente. Ampliar las dimensiones del robot no solo mejoraría la viabilidad del proyecto, sino que también permitiría optimizar tanto la mecánica como la electrónica, acercando el diseño a su objetivo final de un robot totalmente operativo.
+                            
+                            </p>
+    
+
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Copy of PCB_huberBOT.PcbDoc">documento.pdf</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Codigo final.ino">codigo.ino</a> </p>
+                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Canbot Grande.stl">pieza.stl</a> </p>
+
+                </div>
+            </section>
+
+
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
